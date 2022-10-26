@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("./asset/font/Raleway-VariableFont_wght.ttf");
+}
+
+:root{
+    --firstFont : "Raleway";
+    --secondFont : Arial, Helvetica, sans-serif;
+    --white : #fffcf2;
+    --lightGray : #ccc5b9;
+    --gray : #403d39;
+    --black : #252422;
+    --orange : #eb5e28;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    background-color: var(--white);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}

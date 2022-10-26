@@ -1,0 +1,215 @@
+h2{
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*#region HEADER*/
+header{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 84%, 63% 100%, 48% 81%, 26% 100%, 14% 84%, 0 100%);  
+    min-height: 30vh;
+    background-color: var(--orange);
+    font-family: var(--firstFont);
+}
+
+header > nav{
+    margin: 0 auto;
+    max-width: 950px;
+    display: flex;
+}
+
+nav ul{
+    margin-left: auto;
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.containerLink > .linkNav {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 2px solid var(--gray);
+    padding: 5px 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.containerLink:last-child > .linkNav{
+    border-right: none;
+}
+
+.linkNav:hover{
+    color: var(--lightGray);
+}
+
+.containerTitle{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.containerTitle h3, h1{
+    display: inline-block;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+}
+
+.containerTitle h3{
+    margin-left: 25px;
+    font-weight: normal;
+}
+/*#endregion*/
+
+/*#region about me*/
+.aboutMe{
+    max-width: 900px;
+    margin: 15px auto;
+    font-family: var(--firstFont);
+    /* border: 1px solid red; */
+}
+
+.aboutMe > div{
+    display: flex;
+}
+
+.aboutMe > div > .containerPhoto{
+    align-self: flex-start;
+    width: 30%;
+    padding: 15px;
+    border-right: 3px solid var(--gray);
+}
+
+.aboutMe > div .containerParagraph{
+    width: 70%;
+    padding: 15px;
+}
+
+.aboutMe h2{
+    border-bottom: 3px solid var(--gray);
+}
+
+.aboutMe .paragraph > p{
+    font-family: var(--secondFont);
+    padding: 0;
+    font-size: 17px;
+}
+/*#endregion*/
+
+/*#region skills*/
+.mySkills{
+    width: 100%;
+    background-color: var(--lightGray);
+    font-family: var(--firstFont);
+}
+
+.mySkills > div{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.mySkills h2{
+    text-align: center;
+}
+
+.mySkills .containerParagraph{
+    font-family: var(--secondFont);
+    margin: 10px 0;
+}
+
+.mySkills .containerParagraph > p{
+    margin: 0;
+    text-align: center;
+}
+
+.containerSkills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.containerSkills > div{
+    width: 75px;
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 13px -2px #000000; 
+    box-shadow: 0px 0px 13px -2px #000000;
+}
+/*#endregion*/
+
+.myProjects{
+    margin: 15px auto;
+    max-width: 1100px;
+}
+
+.myProjects > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cardProject{
+    max-width: 500px;
+    min-height: 250px;
+    display: flex;
+    -webkit-box-shadow: 3px 0px 15px -2px #000000; 
+    box-shadow: 3px 0px 15px -2px #000000;
+    background-color: var(--white);   
+}
+
+.cardProject:hover .imgContainer > img{
+    transform: scale(1.05);
+}
+
+.cardProject .imgContainer{
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    width: 35%;
+    align-self: stretch;
+}
+
+.cardProject .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardProject .descriptionContainer{
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    margin-left: -7%;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.cardProject .description{
+    width: 100%;
+    min-height: 75%;
+    border: 1px solid var(--lightGray);
+    background-color: var(--white);
+    font-family: var(--firstFont);
+    padding: 5px;
+}
+
+.cardProject .description h3{
+    margin: 0;
+    color : var(--black);
+    text-decoration: underline;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.cardProject .description p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: var(--secondFont);
+    color: var(--gray);
+}
